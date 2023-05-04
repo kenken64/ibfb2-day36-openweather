@@ -14,8 +14,8 @@ export class ListcitiesComponent implements OnInit{
 
   }
 
-  ngOnInit(): void {
+  async ngOnInit() {
     //this.citiesRepo.sortCities();
-    this.cities = this.citiesRepo.getAllCities();    
+    this.cities = await this.citiesRepo.getAllCities();    
   }
 }
